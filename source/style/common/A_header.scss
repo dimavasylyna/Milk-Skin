@@ -304,6 +304,7 @@
 	.header {
 		padding-top: 30px;
 		padding-bottom: 30px;
+		margin-bottom: 60px;
 		&__content {
 			margin-top: 30px;
 		}
@@ -379,6 +380,7 @@
 	}
 	.header {
 		padding-bottom: 40px;
+		margin-bottom: 0;
 		&::after {
 			display: none;
 		}
