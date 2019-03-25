@@ -1,5 +1,63 @@
 .benefits {
-
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 80px;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-top: 44px;
+	}
+	&__img {
+		max-width: 332px;
+	}
+	&__desc {
+		font-size:22px;
+		line-height: 28px;
+		font-weight: 500;
+		margin-top: 20px;
+	}
+	&__conclusion {
+		margin-top: 38px;
+		padding-top: 64px;
+		font-size: 25px;
+		line-height: 1.1;
+		position: relative;
+		font-weight: 500;
+		&::before {
+			content: '';
+		    display: block;
+		    position: absolute;
+		    width: 46px;
+		    height: 46px;
+		    background-color: #7dcc60;
+		    border-radius: 50% 50% 0% 50%;
+		    left: 0;
+		    background-repeat: no-repeat;
+		    background-position: 50%;
+		    background-size: 24px;
+		    left: 50%;
+		    top: 0;
+		    transform: translateX(-50%) rotate(45deg);
+		    z-index: 1;
+		}
+		&::after {
+			content: '';
+		    display: block;
+		    position: absolute;
+		    width: 46px;
+		    height: 46px;
+		    left: 0;
+		    background-image: url(../img/check-mark.svg);
+		    background-repeat: no-repeat;
+		    background-position: 50%;
+		    background-size: 24px;
+		    left: 50%;
+		    top: 3px;
+		    transform: translateX(-50%);
+		    z-index: 1;
+		}
+	}
 }
 @media screen and (max-width: 1190px){
   
