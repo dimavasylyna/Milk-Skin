@@ -28,8 +28,8 @@
         overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
         overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
       }
-      var beforeImg = container.find("img:first");
-      var afterImg = container.find("img:last");
+      var beforeImg = container.find(".twentytwenty-before");
+      var afterImg = container.find(".twentytwenty-after");
       container.append("<div class='twentytwenty-handle'></div>");
       var slider = container.find(".twentytwenty-handle");
       slider.append("<span class='twentytwenty-" + beforeDirection + "-arrow'></span>");
@@ -39,8 +39,8 @@
       afterImg.addClass("twentytwenty-after");
       
       var calcOffset = function(dimensionPct) {
-        var w = beforeImg.width();
-        var h = beforeImg.height();
+        var w = container.width();
+        var h = container.height();
         return {
           w: w+"px",
           h: h+"px",
@@ -101,12 +101,16 @@
         offsetX = container.offset().left;
         offsetY = container.offset().top;
         imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();          
+        imgHeight = beforeImg.height();         
       };
       var onMove = function(e) {
         if (container.hasClass("active")) {
           sliderPct = getSliderPercentage(e.pageX, e.pageY);
           adjustSlider(sliderPct);
+          // відслідковуємо вихід повзунка за межі екрану
+          // if(e.pageX < 20) {
+          //   onMoveEnd();
+          // }
         }
       };
       var onMoveEnd = function() {

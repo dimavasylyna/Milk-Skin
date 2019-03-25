@@ -274,6 +274,8 @@ function postDate() {
 
 $(function() {
      $(".header__woman").twentytwenty();
+
+    
  
 });
 

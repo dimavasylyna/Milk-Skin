@@ -7,8 +7,8 @@
  }
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
-  width: 3px;
-  height: 9999px;
+  width: 2px;
+  height: 800px;
   left: 50%;
   margin-left: -1.5px; }
 
@@ -128,3 +128,22 @@
   background-color: rgba(255, 255, 255, 0.44);
 }
 
+
+@media screen and (max-width: 1190px){
+  .twentytwenty-handle {
+    margin-top: 184px;
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+    margin-left: -18px;
+  }
+  .twentytwenty-horizontal .twentytwenty-handle:after {
+    margin-top: 17px;
+  }
+  .twentytwenty-horizontal .twentytwenty-handle:before {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 1023px){
+
+}
