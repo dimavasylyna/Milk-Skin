@@ -1,15 +1,131 @@
 .history {
-
+	background-color: #fff;
+	padding-top: 76px;
+	padding-bottom: 80px;
+	&__list {
+		margin-top: 48px;
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		justify-content: flex-start;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #ee7e2c;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 10px;
+			z-index: 2;
+		}
+		&::after {
+			content: '';
+		    display: block;
+		    position: absolute;
+		    left: calc(50% - 1px);
+		    top: 20px;
+		    width: 1px;
+		    height: 425px;
+		    z-index: 1;
+		    background: repeating-linear-gradient(to top, #e2e2e2 0px, #e2e2e2 33px, rgba(0, 0, 0, 0) 33px, rgba(0, 0, 0, 0) 66px);
+		    background-repeat: repeat-y;
+		    background-position: 0 101%;
+		    background-size: 1px 64px;
+		}
+		&--now {
+			margin-top: 17px;
+			&::before {
+				background-color: #70db70; 
+				top: 24px;
+			}
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: 48px;
+				width: 1px;
+				height: 246px;
+				background-color: #e2e2e2;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		max-width: 461px;
+		&--before {
+			margin-left: 55px;
+			margin-right: 112px;
+			margin-top: 21px;
+		}
+		&--now {
+			order: 1;
+			margin-left: auto;
+			margin-right: 66px;
+		}
+	}
+	&__text {
+		&--before {
+			max-width: 508px;
+		}
+		&--now {
+			text-align: right;
+			max-width: 436px;
+			margin-left: auto;
+			margin-top: 15px;
+		}
+	}
+	&__title {
+		font-size: 27px;
+		margin-bottom: 29px;
+	}
+	&__par {
+		font-size: 17px;
+		line-height: 28px;
+		color: #444;
+		b {
+			color: $text-black;
+		}
+	}
+	&__about {
+		text-align: center;
+		font-size: 18px;
+		line-height: 28px;
+		color: #444;
+		margin-top: 42px;
+		max-width: 1010px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__conclusion {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+		margin-top: 7px;
+	}
 }
 @media screen and (max-width: 1190px){
-  
+  .history {
+
+  }
 }
 @media screen and (max-width: 1023px){
-
+  .history {
+  	
+  }
 }
 @media screen and (max-width: 767px){
-
+  .history {
+  	
+  }
 }
 @media screen and (max-width: 479px){
-
+  .history {
+  	
+  }
 }
