@@ -1,5 +1,63 @@
 .components {
-
+	padding-top: 68px;
+	padding-bottom: 80px;
+	background-color: #fff;
+	.dioscorea {
+		display: flex;
+		margin-top: 38px;
+		max-width: 992px;
+		margin-left: auto;
+		margin-right: auto;
+		&__img {
+			width: 100%;
+			max-width: 481px;
+			margin-right: 76px;
+		}
+		&__text {
+			padding-top: 20px;
+		}
+		&__par {
+			font-size: 17px;
+			line-height: 28px;
+			color: #444;
+			max-width: 440px;
+			&:nth-of-type(n+2) {
+				margin-top: 29px;
+			}
+			b {
+				color: $text-black;
+			}
+			&-name {
+				font-size: 19px;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-top: 15px;
+	}
+	&__item {
+		max-width: 340px;
+		text-align: center;
+	}
+	&__text {
+		margin-top: 18px;
+		&-title {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		&-desc {
+			color: #444;
+			font-size: 18px;
+			line-height: 28px;
+			b {
+				color: $text-black;
+			}
+		}
+	}
 }
 @media screen and (max-width: 1190px){
   
