@@ -1,15 +1,124 @@
 .risk {
-
+	background-color: #f5fcff;
+	text-align: center;
+	padding-top: 74px;
+	padding-bottom: 96px;
+	&__attention {
+		background-color: #fff;
+		border-radius: 136px;
+		border: 2px solid #f05537;
+		padding: 21px;
+		padding-bottom: 29px;
+		margin-top: 56px;
+		width: 100%;
+		max-width: 972px;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 0px 5px 5px rgba(129, 200, 231, 0.07);
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -24px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 43px;
+			width: 43px;
+			border-radius: 50%;
+			background-color: #f05537;
+			background-image: url(../img/attention.svg);
+			background-repeat: no-repeat;
+			background-position: 50% 40%;
+		}
+		&-title {
+			font-size: 21px;
+			color: #f05537;
+			font-weight: 500;
+		}
+		&-text {
+			font-size: 21px;
+			line-height: 28px;
+			color: #444;
+			margin-top: 2px;
+			b {
+				color: $text-black;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 46px;
+		justify-content: space-between;
+	}
+	&__item {
+		max-width: 284px;
+		&--2n {
+			margin-top: 50px;
+		}
+	}
+	&__img {
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 43px;
+			width: 43px;
+			background-color: #f05537;
+			border-radius: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -6px;
+			top: auto;
+			background-image: url(../img/exclamation-mark.svg);
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-size: 7px;
+		}
+		&--2n::before {
+			top: -4px;
+			bottom: auto;
+		}
+	}
+	&__desc {
+		font-size: 19px;
+		line-height: 28px;
+		color: #444;
+		margin-top: 30px;
+		padding: 0 10px;
+		&--2n {
+			margin-top: 21px;
+		}
+	}
+	&__conclusion {
+		font-size: 28px;
+		line-height: 35px;
+		color: $text-black;
+		margin-top: 42px;
+	}
+	.btn {
+		margin-top: 42px;
+	}
 }
 @media screen and (max-width: 1190px){
-  
+  .risk {
+
+  }
 }
 @media screen and (max-width: 1023px){
+  .risk {
 
+  }
 }
 @media screen and (max-width: 767px){
+  .risk {
 
+  }
 }
 @media screen and (max-width: 479px){
+  .risk {
 
+  }
 }

@@ -1,0 +1,35 @@
+.wave {
+	position: relative;
+	&::before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    background-image: url(../img/wave.svg);
+	    background-repeat: no-repeat;
+	    background-position: -378px -70px;
+	    background-size: 121%;
+	    top: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 100%;
+	    max-width: 2650px;
+	    height: 110px;
+	    z-index: 3;
+	}
+	&::after {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    background-image: url(../img/wave.svg);
+	    background-repeat: no-repeat;
+	    background-position: -390px 0%;
+	    background-size: 121%;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 100%;
+	    max-width: 2650px;
+	    height: 38px;
+	    z-index: 3;
+	}
+}

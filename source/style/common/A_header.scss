@@ -80,7 +80,7 @@
 		content: '';
 		display: block;
 		position: absolute;
-		background-image: url(../img/wawe.svg);
+		background-image: url(../img/wave.svg);
 		background-repeat: no-repeat;
 		background-position:  -420px 0%;
 		// background-size: 3100px;
@@ -440,11 +440,13 @@
 			&::before {
 				width: 38px;
 				height: 38px;
+				left: 0;
 			}
 			&::after {
 				top: 50%;
 				transform: translateY(-50%);
 				width: 20px;
+				left: 32px;
 			}
 		}
 		&__root {
