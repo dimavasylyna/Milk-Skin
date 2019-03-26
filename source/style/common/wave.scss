@@ -33,3 +33,22 @@
 	    z-index: 3;
 	}
 }
+
+@media screen and (max-width: 1700px) {
+	.wave {
+		&::before {
+			background-position: -200px -70px;
+		}
+		&::after {
+			background-position: -200px 0%;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.wave {
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+}
