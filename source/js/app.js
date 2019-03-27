@@ -275,7 +275,39 @@ function postDate() {
 $(function() {
      $(".header__woman").twentytwenty();
 
-    
+     $('.reviews__list').slick({
+        slidesToShow: 3,
+        infinite: true,
+        dots: false,
+        arrows: true,
+        wariableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    wariableWidth: false
+                }
+            }
+        ]
+     });
  
+
+    // reviews__more
+    $('.reviews__more').on('click', function() {
+        $(this).parent().toggleClass('open');
+    });
+    // при прокрутці слайдер видаляємо класи open
+    $('.reviews__list').on('afterChange', function(event, slick, currentSlide){
+        $(this).find('.open').removeClass('open');
+    });
 });
 
