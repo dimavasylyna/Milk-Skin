@@ -39,6 +39,7 @@
 		}
 		&--now {
 			margin-top: 17px;
+			text-align: right;
 			&::before {
 				background-color: #70db70; 
 				top: 24px;
@@ -74,7 +75,6 @@
 			max-width: 508px;
 		}
 		&--now {
-			text-align: right;
 			max-width: 436px;
 			margin-left: auto;
 			margin-top: 15px;
@@ -111,17 +111,154 @@
 }
 @media screen and (max-width: 1190px){
   .history {
-
+  	&__list {
+  		margin-top: 30px;
+  	}
+  	&__item {
+  		&--before {
+  			&::after {
+  				height: 390px;
+  			}
+  		}
+  		&--now {
+  			margin-top: 0;
+  		}
+  	}
+  	&__img {
+  		margin-top: 0;
+  		&--before {
+			margin-left: 0;
+			margin-right: auto;
+  		}
+  		&--now {
+			margin-left: auto;
+			margin-right: 0;
+  		}
+  	}
+  	&__text {
+  		margin: 0;
+  		&--before {
+  			max-width: 480px;
+  		}
+  		&--now {
+  			margin-top: 20px;
+  			max-width: 410px;
+  			margin-left: auto;
+  		}
+  	}
+	&__par {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	&__about {
+		margin-top: 30px;
+		font-size: 17px;
+		line-height: 26px;
+		max-width: 960px;
+	}
+	&__conclusion {
+		font-size: 22px;
+	}
   }
 }
 @media screen and (max-width: 1023px){
   .history {
-  	
+  	&__list {
+  		margin-top: 20px;
+  	}
+  	&__item {
+  		align-items: center;
+  		&::before,
+  		&::after {
+			left: 283px;
+			top: 5px;
+  		}
+  		&::after {
+  			height: 96%;
+  		}
+  		&--now {
+  			margin-top: 20px;
+  			text-align: left;
+  		}
+  	}
+	&__img {
+		max-width: 270px;
+		margin-right: 30px;
+		&--now {
+			margin-left: 0;
+			order: 0;
+		}
+	}
+	&__text {
+		&--before {
+			max-width: 445px;
+		}
+		&--now {
+			max-width: 375px;
+			margin-top: 0;
+			margin-left: 0;
+		}
+	}
+	&__title {
+		margin-bottom: 6px;
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	&__par {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	&__about {
+		margin-top: 20px;
+		font-size: 15px;
+		line-height: 1.5;
+		max-width: none;
+	}
+	&__conclusion {
+		font-size: 21px;
+	}
   }
 }
 @media screen and (max-width: 767px){
   .history {
-  	
+  	&__item {
+  		display: block;
+  		text-align: center;
+  		&::after,
+  		&:before {
+  			display: none;
+  		}
+  	}
+  	&__img {
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	&__text {
+  		max-width: none;
+  	}
+  	&__title {
+  		padding-right: 12px;
+  		font-size: 20px;
+  		&::before {
+  			content: '';
+		    display: inline-block;
+		    width: 12px;
+		    height: 12px;
+		    border-radius: 50%;
+		    background-color: #ee7e2c;
+		    z-index: 2;
+		    transform: translateX(-4px);
+  		}
+  		&--now::before {
+  			background-color: #70db70;
+  		}
+  	}
+  	&__about {
+  		margin-top: 10px;
+  	}
+  	&__conclusion {
+  		font-size: 20px;
+  	}
   }
 }
 @media screen and (max-width: 479px){
