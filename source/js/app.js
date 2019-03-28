@@ -281,9 +281,10 @@ $(function() {
         dots: false,
         arrows: true,
         wariableWidth: true,
+        adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1023,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -293,8 +294,8 @@ $(function() {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    wariableWidth: false
+                    slidesToScroll: 1
+
                 }
             }
         ]
@@ -304,10 +305,20 @@ $(function() {
     // reviews__more
     $('.reviews__more').on('click', function() {
         $(this).parent().toggleClass('open');
+        console.log('CLICK!');
     });
     // при прокрутці слайдер видаляємо класи open
     $('.reviews__list').on('afterChange', function(event, slick, currentSlide){
         $(this).find('.open').removeClass('open');
     });
+    
+
+    // видаляємо останній слайд, бо інакше виходить срака 
+    // (останній слайд не вміщається в контейнері slick-track)
+    // і стає в другому рядку айтемів. Причиною цього є маргіни айтемів
+    $(window).on('resize', function() {
+       $('.slick-slide:last-of-type').hide();
+    });
+
 });
 
