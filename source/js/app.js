@@ -294,8 +294,8 @@ $(function() {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
+                    adaptiveHeight: true,
                     slidesToScroll: 1
-
                 }
             }
         ]
