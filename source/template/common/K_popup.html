@@ -1,5 +1,40 @@
 <div class="ever-popup-build">
-	<div class="my-popup popup" id="cloneThis">
-		
+	<div class="popup" id="cloneThis">
+		<div class="popup__content">
+			<div class="popup__prod"><img src="./img/header__prod.png" alt=""></div>
+			<div class="form">
+				<div class="form__head">
+					<h3 class="form__title">Успейте заказать<br> со скидкой <span class="nowrap red form__today">до <span class="date-0">15.01.2019</span></span></h3>
+					<div class="price">
+						<div class="price__old">
+							<p class="price__title price__title--old">Старая цена</p>
+							<div class="price__value price__value--old">
+								<span class="price__num price__num--old x_price__previous">1980</span>
+								<span class="price__currency price__currency--old x_currency">руб</span>
+							</div>
+						</div>
+						<div class="price__new">
+							<p class="price__title price__title--new">Новая цена</p>
+							<div class="price__value price__value--new">
+								<span class="price__num price__num--new x_price__current">990</span>
+								<span class="price__currency price__currency--new x_currency">руб</span>
+							</div>
+						</div>
+					</div>
+					<p class="form__lastpack">Осталось упаковок<br> со скидкой: <span class="lastpack">15</span></p>
+				</div>
+				<form action="/submit" method="post" class="x_order_form">
+					<label class="form__label form__label--name">
+						<input class="form__input" type="text" placeholder="Моё имя" name="name" required="" autocomplete="name">
+					</label>
+					<label class="form__label form__label--tel">
+						<input class="form__input" type="tel" placeholder="Мой телефон" name="phone" required="" autocomplete="tel">
+					</label>
+					<button class="btn"> Заказать <span class="btn__small">со скидкой</span> </button>
+					<p class="form__footnote">* при заказе курса</p>
+					<p class="form__pay-after">Оплата после получения</p>
+				</form>
+			</div>
+		</div>
 	</div>
 </div>

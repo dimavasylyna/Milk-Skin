@@ -1,5 +1,68 @@
+.ever-popup__inner {
+	padding-top: 0!important;
+}
+.ever-popup__close {
+	top: 26px!important;
+	right: 26px!important;
+	&::before,
+	&::after {
+		background-color: #7dcc60!important;
+		height: 3px!important;
+		width: 30px!important;
+	}
+}
 .popup {
-
+	background-color: #f5fcff;
+	border-radius: 10px;
+	padding: 55px;
+	.form {
+	  margin-right: 10px;
+	  width: 270px;
+	  margin-top: 13px;
+	  padding: 0;
+	  padding-bottom: 9px;
+	  &__title {
+	  	font-size: 23px;
+	  	font-weight: 500;
+	  }
+	  &__today {
+	  	font-size: 24px;
+	  	font-weight: 700;
+	  	line-height: 28px;
+	  }
+	  &__lastpack {
+	  	line-height: 22px;
+	  }
+	  .lastpack {
+	  	color: #92b069;
+	  	font-weight: 500;
+	  }
+	}
+	.price {
+		padding-bottom: 8px;
+		&::after {
+			display: none;
+		}
+		&__num--new {
+			font-size: 44px;
+		}
+	}
+	.btn {
+		max-width: 220px;
+		margin-top: 0;
+		font-size: 27px;
+		padding-top: 5px;
+		padding-bottom: 7px;
+	}
+	&__content {
+		display: flex;
+		position: relative;
+		z-index: 0;
+	}
+	&__prod {
+		align-self: flex-end;
+		margin-bottom: 20px;
+	}
 }
 @media screen and (max-width: 1190px){
   
