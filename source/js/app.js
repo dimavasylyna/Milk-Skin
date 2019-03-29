@@ -307,9 +307,9 @@ $(function() {
         $(this).parent().toggleClass('open');
         console.log('CLICK!');
     });
-    // при прокрутці слайдер видаляємо класи open
+   // видаляємо класи open при прокрутці слайду
     $('.reviews__list').on('afterChange', function(event, slick, currentSlide){
-        $(this).find('.open').removeClass('open');
+      $(this).find('.slick-slide.open').not('.slick-active').removeClass('open');
     });
     
 
