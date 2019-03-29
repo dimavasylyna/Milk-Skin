@@ -1,11 +1,30 @@
 .footer {
+	text-align: center;
+	padding-bottom: 30px;
+	&__logo {
+		max-width: 54px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+	}
+	&__name {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	&__link {
+		font-size: 18px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
 
-}
-@media screen and (max-width: 1190px){
-  
-}
 @media screen and (max-width: 1023px){
-
+	.footer.block {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 @media screen and (max-width: 767px){
 

@@ -1,5 +1,6 @@
 .header-bottom {
 	padding-bottom: 64px;
+	margin-bottom: 193px;
 	&::before {
 		top: -17px;
 	}
@@ -115,6 +116,7 @@
 }
 @media screen and (max-width: 1190px){
   .header-bottom {
+  	margin-bottom: 120px;
   	.form {
   		margin-right: 0;
   	}
@@ -142,6 +144,7 @@
 		background-size: cover;
 		padding-top: 40px;
 		padding-bottom: 40px;
+		margin-bottom: 0;
 		.header {
 			&__content {
 				margin-top: 0;
