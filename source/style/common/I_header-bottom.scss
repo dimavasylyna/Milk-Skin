@@ -94,8 +94,10 @@
 }
 @media screen and (max-width: 1500px){
   .header-bottom {
-  	&::before {
-  		top: 0;
+  	.header {
+  		&__woman-img  {
+  			background-position: 50% 0%;
+  		}
   	}
   }
 }

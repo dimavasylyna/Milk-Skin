@@ -283,14 +283,12 @@
 		}
 	}
 }
-@media screen and (max-width: 1380px){
+@media screen and (max-width: 1500px){
 	.header {
-		&__woman {
-			// width: 500px;
-			&-img {
-				// background-size: 500px;
-			}
+		&::after {
+			display: none;
 		}
+		
 	}
 }
 @media screen and (max-width: 1270px){
@@ -529,6 +527,9 @@
 				height: 30px;
 				width: 30px;
 				background-size: 20px;
+			}
+			&::after {
+				left: 28px;
 			}
 		}
 		&__root {

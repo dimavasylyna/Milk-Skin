@@ -8,7 +8,7 @@
 	    background-image: url(../img/wave.svg);
 	    background-repeat: no-repeat;
 	    background-position: -378px -70px;
-	    background-size: 121%;
+	    background-size: 125%;
 	    top: 0;
 	    left: 50%;
 	    transform: translateX(-50%);
@@ -28,23 +28,33 @@
 	    bottom: 0;
 	    left: 50%;
 	    transform: translateX(-50%);
-	    width: 100%;
+	    width: 120%;
 	    max-width: 2650px;
 	    height: 38px;
 	    z-index: 3;
 	}
 }
 
-@media screen and (max-width: 1700px) {
+// @media screen and (max-width: 1700px) {
+// 	.wave {
+// 		&::before {
+// 			background-position: -200px -70px;
+// 		}
+// 		&::after {
+// 			background-position: -200px 0%;
+// 		}
+// 	}
+// }
+
+@media screen and (max-width: 1500px) {
 	.wave {
-		&::before {
-			background-position: -200px -70px;
-		}
+		&::before,
 		&::after {
-			background-position: -200px 0%;
+			display: none;
 		}
 	}
 }
+
 @media screen and (max-width: 1023px) {
 	.wave {
 		&::before,
