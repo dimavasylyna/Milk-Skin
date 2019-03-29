@@ -18,7 +18,6 @@
 	.form {
 	  margin-right: 10px;
 	  width: 270px;
-	  margin-top: 13px;
 	  padding: 0;
 	  padding-bottom: 9px;
 	  &__title {
@@ -64,15 +63,46 @@
 		margin-bottom: 20px;
 	}
 }
-@media screen and (max-width: 1190px){
-  
-}
-@media screen and (max-width: 1023px){
 
+@media screen and (max-width: 1000px){
+	.ever-popup__close {
+		top: 8px!important;
+		right: 8px!important;
+		&::before,
+		&::after {
+			background-color: #7dcc60!important;
+			height: 3px!important;
+			width: 22px!important;
+		}
+	}
+	.popup {
+		padding: 20px;
+		&__content {
+			display: block;
+		}
+		&__prod {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 0;
+			margin-top: 10px;
+		}
+		.form {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0;
+		}
+	}
 }
-@media screen and (max-width: 767px){
-
-}
-@media screen and (max-width: 479px){
-
+@media screen and (max-width: 500px){
+	.popup {
+		&__prod {
+			max-width: 270px;
+		}
+		.form {
+			&::before {
+				display: none;
+			}
+		}
+	}
 }
