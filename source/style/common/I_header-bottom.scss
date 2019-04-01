@@ -129,6 +129,11 @@
 		&__prod {
 			bottom: -164px;
 		}
+		&__root {
+			&::before {
+				right: -300px;
+			}
+		}
 		&__woman {
 			transform: translateX(-594px);
 			bottom: 0;
@@ -180,11 +185,12 @@
 			&__prod {
 				position: absolute;
 				left: 60px;
-				bottom: 0px;
+				bottom: -26px;
 			}
 			&__root {
 				bottom: -20px;
 				left: 100px;
+				display: none;
 				i {
 					background: none;
 				}
@@ -205,6 +211,9 @@
 			}
 			&__prod {
 				position: static;
+			}
+			&__root {
+				display: block;
 			}
 		}
 	}

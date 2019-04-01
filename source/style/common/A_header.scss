@@ -267,6 +267,7 @@
 		width: 612px;
 		height: 752px;
 		overflow: visible;
+		touch-action: none;
 		&-img {
 			position: absolute;
 			width: 100%;
