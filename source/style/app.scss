@@ -401,7 +401,7 @@ input::-ms-clear {
   font-weight: 700;
   max-width: 242px;
   margin-top: 15px;
-  box-shadow: 0px 5px #000, 0px 14px 20px -14px rgba(0, 0, 0, 0.74);
+  box-shadow: inset 0px -1px #000, 0px 5px #000, 0px 14px 20px -14px rgba(0, 0, 0, 0.74);
   border-radius: 5px;
   &__small {
     font-size: 20px;
@@ -413,7 +413,7 @@ input::-ms-clear {
   }
   &:hover {
     background: linear-gradient(to right, rgba(125,204,96,1) 0%,rgba(141,218,113,1) 50%,rgba(125,204,96,1) 100%);
-    box-shadow: 0px 5px #65ae4a, 0px 14px 20px -14px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 0px -1px #65ae4a, 0px 5px #65ae4a, 0px 14px 20px -14px rgba(0, 0, 0, 0.74);
   }
   &:active {
     box-shadow: 0px 0px #65ae4a, 0px 0px 20px -14px rgba(0, 0, 0, 0);
