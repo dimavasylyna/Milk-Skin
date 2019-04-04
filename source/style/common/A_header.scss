@@ -516,23 +516,10 @@
 		padding-bottom: 30px;
 		&__title {
 			&-cream {
-				font-size: 38px;
-				&::before {
-					font-size: 44px;
-					left: 10px;
-					top: -10px;
-				}
+				font-size: 50px;
 			}
 			&-name {
-				font-size: 65px;
-				line-height: 55px;
-				margin-top: 0;
-				&::before {
-					font-size: 50px;
-					line-height: 0.9;
-					left: auto;
-					right: 60px;
-				}
+				font-size: 50px;
 			}
 		}
 		&__subtitle {
@@ -607,23 +594,10 @@
 		}
 		&__title {
 			&-cream {
-				font-size: 32px;
-				&::before {
-					font-size: 36px;
-					left: 10px;
-					top: -10px;
-				}
+				font-size: 44px;
 			}
 			&-name {
-				font-size: 50px;
-				line-height: 1;
-				margin-top: 0;
-				&::before {
-					font-size: 40px;
-					line-height: 0.9;
-					left: auto;
-					right: 60px;
-				}
+				font-size: 44px;
 			}
 		}
 		&__subtitle {
