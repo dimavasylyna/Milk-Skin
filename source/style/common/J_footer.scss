@@ -19,7 +19,11 @@
 		}
 	}
 }
-
+@media screen and (max-width: 1199px){
+	.footer.block {
+		padding-bottom: 25px;
+	}
+}
 @media screen and (max-width: 1023px){
 	.footer.block {
 		padding-top: 20px;
